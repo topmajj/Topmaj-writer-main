@@ -1,0 +1,934 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back! Here's an overview of your writing activity.",
+    "recentDocuments": "Recent Documents",
+    "aiTools": "AI Tools"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "documents": "Documents",
+    "templates": "Templates",
+    "aiTools": "AI Tools",
+    "content": "Content",
+    "translation": "Translation",
+    "imageGeneration": "Image Generation",
+    "billing": "Billing",
+    "settings": "Settings",
+    "account": "Account",
+    "main": "Main"
+  },
+  "common": {
+    "settings": "Settings",
+    "logout": "Log out",
+    "search": "Search",
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "newDocument": "New Document",
+    "favorites": "Favorites",
+    "loading": "Loading...",
+    "calculating": "Calculating...",
+    "menu": "Menu",
+    "close": "Close",
+    "useTool": "Use Tool",
+    "back": "Back",
+    "refresh": "Refresh",
+    "form": "Form",
+    "preview": "Preview",
+    "generateContent": "Generate Content",
+    "generating": "Generating...",
+    "generatedContent": "Generated Content",
+    "generatingContent": "Generating content... This may take a moment.",
+    "fillFormToGenerate": "Fill out the form and click \"Generate Content\" to see the result here.",
+    "backToForm": "Back to Form",
+    "saveToDocuments": "Save to Documents",
+    "saving": "Saving...",
+    "yes": "Yes",
+    "no": "No",
+    "authError": "You must be logged in to generate content",
+    "requiredFields": "Please fill in all required fields",
+    "contentGenerated": "Content generated successfully!",
+    "generationError": "An error occurred while generating content",
+    "noContentToSave": "No content to save or user not authenticated",
+    "contentSaved": "Content saved to documents",
+    "savingError": "An error occurred while saving content"
+  },
+  "language": {
+    "english": "English",
+    "arabic": "Arabic"
+  },
+  "metrics": {
+    "wordsGenerated": "Words Generated",
+    "documentsCreated": "Documents Created",
+    "promptsUsed": "AI Prompts Used",
+    "usage": "Usage",
+    "fromLastMonth": "from last month",
+    "creditsUsed": "credits used"
+  },
+  "analytics": {
+    "title": "Analytics Overview",
+    "description": "View your content generation analytics over time.",
+    "wordsGenerated": "Words Generated",
+    "documents": "Documents",
+    "contentTypes": "Content Types",
+    "loadingWordCount": "Loading word count data...",
+    "loadingAnalytics": "Loading analytics data...",
+    "loadingContentType": "Loading content type data...",
+    "noData": "No data available. Start creating content to see analytics.",
+    "words": "words",
+    "items": "items",
+    "contentCreated": "Content Created",
+    "date": "Date",
+    "count": "Count"
+  },
+  "documents": {
+    "title": "Documents",
+    "subtitle": "Create, manage, and organize your AI-generated content.",
+    "searchPlaceholder": "Search documents...",
+    "filter": "Filter",
+    "newDocument": "New Document",
+    "allDocuments": "All Documents",
+    "recent": "Recent",
+    "folders": "Folders",
+    "authError": "Authentication error. Please sign in again.",
+    "fetchError": "Failed to fetch documents",
+    "loadError": "Failed to load documents. Please try again later.",
+    "noDocumentsFound": "No documents found",
+    "createFirstDocument": "Create your first document",
+    "noDocuments": "No documents found",
+    "createFirst": "Create your first document",
+    "createNewDocument": "Create a new document",
+    "noRecentDocuments": "No recent documents found",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "daysAgo": "{days} days ago",
+    "weeksAgo": "{weeks} weeks ago",
+    "defaultCategory": "Content",
+    "words": "words",
+    "preview": "Preview",
+    "copyContent": "Copy Content",
+    "delete": "Delete",
+    "rename": "Rename",
+    "move": "Move",
+    "openFolder": "Open Folder",
+    "documentsCount": "documents",
+    "close": "Close",
+    "created": "Created",
+    "copiedSuccess": "Content copied to clipboard",
+    "copyError": "Failed to copy content",
+    "deleteConfirm": "Are you sure you want to delete this document?",
+    "deleteSuccess": "Document deleted successfully",
+    "deleteError": "Failed to delete document"
+  },
+  "templates": {
+    "title": "Templates",
+    "subtitle": "Use pre-built templates to quickly generate content.",
+    "searchPlaceholder": "Search templates...",
+    "filter": "Filter",
+    "createTemplate": "Create Template",
+    "allTemplates": "All Templates",
+    "useTemplate": "Use Template",
+    "categories": {
+      "blogPosts": "Blog Posts",
+      "socialMedia": "Social Media",
+      "email": "Email",
+      "ads": "Ads",
+      "websiteCopy": "Website Copy",
+      "ecommerce": "Ecommerce"
+    },
+    "descriptions": {
+      "blogPostIntro": "Create an engaging introduction for your blog post",
+      "productDescription": "Generate compelling product descriptions",
+      "socialMediaPost": "Create engaging social media content",
+      "emailNewsletter": "Craft professional email newsletters",
+      "seoBlogPost": "Generate SEO-optimized blog content",
+      "instagramCaption": "Create engaging Instagram captions",
+      "landingPageCopy": "Persuasive copy for your landing pages",
+      "adCopy": "Compelling ad copy for various platforms",
+      "caseStudy": "Create detailed case studies showcasing your success stories",
+      "linkedinPost": "Professional content optimized for LinkedIn's platform",
+      "welcomeEmail": "Onboarding email series for new subscribers",
+      "facebookAdCopy": "Targeted ad copy for Facebook campaigns",
+      "aboutUsPage": "Compelling company story for your website",
+      "howToGuide": "Step-by-step instructional content for your audience",
+      "twitterThread": "Engaging multi-tweet content for Twitter/X",
+      "promotionalEmail": "Sales-focused emails for special offers and promotions",
+      "googleAdsCopy": "Optimized ad copy for Google search campaigns",
+      "faqPage": "Comprehensive FAQ content for your website",
+      "featureComparison": "Highlight product features and benefits against competitors"
+    },
+    "blog-post-introduction": {
+      "title": "Blog Post Introduction",
+      "description": "Create an engaging introduction for your blog post",
+      "form": {
+        "title": "Fill in the details",
+        "description": "Provide information to generate your blog post introduction",
+        "topic": "Blog Topic",
+        "topicPlaceholder": "Enter the main topic of your blog post",
+        "audience": "Target Audience",
+        "audiencePlaceholder": "Who is your target audience?",
+        "tone": "Tone of Voice",
+        "tonePlaceholder": "Select the tone for your content",
+        "keyPoints": "Key Points",
+        "keyPointsPlaceholder": "List the key points you want to cover (optional)"
+      },
+      "preview": {
+        "description": "Review your generated blog post introduction"
+      }
+    },
+    "product-description": {
+      "title": "Product Description",
+      "description": "Create compelling product descriptions that convert",
+      "form": {
+        "title": "Fill in the details",
+        "description": "Provide information to generate your product description",
+        "productName": "Product Name",
+        "productNamePlaceholder": "Enter the name of your product",
+        "productType": "Product Type/Category",
+        "productTypePlaceholder": "What type of product is this?",
+        "keyFeatures": "Key Features & Benefits",
+        "keyFeaturesPlaceholder": "List the main features and benefits of your product",
+        "targetAudience": "Target Audience",
+        "targetAudiencePlaceholder": "Who is this product for?",
+        "pricePoint": "Price Point",
+        "pricePointPlaceholder": "e.g., Premium, Mid-range, Budget",
+        "tone": "Tone of Voice",
+        "tonePlaceholder": "Select the tone for your content",
+        "wordCount": "Word Count",
+        "wordCountPlaceholder": "Select the desired length",
+        "additionalInstructions": "Additional Instructions",
+        "additionalInstructionsPlaceholder": "Any specific requirements or information to include"
+      },
+      "preview": {
+        "description": "Review your generated product description"
+      }
+    },
+    "social-media-post": {
+      "title": "Social Media Post",
+      "description": "Create engaging content for your social media platforms",
+      "form": {
+        "title": "Fill in the details",
+        "description": "Provide information to generate your social media post",
+        "platform": "Platform",
+        "platformPlaceholder": "Select the social media platform",
+        "topic": "Topic",
+        "topicPlaceholder": "What is your post about?",
+        "audience": "Target Audience",
+        "audiencePlaceholder": "Who is your target audience?",
+        "tone": "Tone of Voice",
+        "tonePlaceholder": "Select the tone for your content",
+        "goal": "Goal",
+        "goalPlaceholder": "What's the goal of this post? (e.g., drive traffic, increase engagement)",
+        "hashtags": "Hashtags",
+        "hashtagsPlaceholder": "Enter hashtags separated by spaces",
+        "callToAction": "Call to Action",
+        "callToActionPlaceholder": "What action do you want readers to take?"
+      },
+      "preview": {
+        "description": "Review your generated social media post"
+      }
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Create professional email newsletters for your audience",
+      "form": {
+        "title": "Fill in the details",
+        "description": "Provide information to generate your newsletter",
+        "newsletterName": "Newsletter Name",
+        "newsletterNamePlaceholder": "Enter the name of your newsletter",
+        "topic": "Main Topic",
+        "topicPlaceholder": "What is the main topic of this newsletter?",
+        "audience": "Target Audience",
+        "audiencePlaceholder": "Who is your target audience?",
+        "tone": "Tone of Voice",
+        "tonePlaceholder": "Select the tone for your content",
+        "keyPoints": "Key Points",
+        "keyPointsPlaceholder": "List the key points you want to cover",
+        "callToAction": "Call to Action",
+        "callToActionPlaceholder": "What action do you want readers to take?",
+        "additionalInfo": "Additional Information",
+        "additionalInfoPlaceholder": "Any other details you'd like to include"
+      },
+      "preview": {
+        "description": "Review your generated newsletter"
+      }
+    },
+    "seo-blog-post": {
+      "title": "SEO Blog Post",
+      "description": "Generate SEO-optimized blog content",
+      "form": {
+        "title": "Fill in the details",
+        "description": "Provide information to generate your SEO blog post",
+        "primaryKeyword": "Primary Keyword",
+        "primaryKeywordPlaceholder": "Enter your main SEO keyword",
+        "secondaryKeywords": "Secondary Keywords",
+        "secondaryKeywordsPlaceholder": "Enter secondary keywords separated by commas",
+        "topic": "Blog Topic",
+        "topicPlaceholder": "What is your blog post about?",
+        "audience": "Target Audience",
+        "audiencePlaceholder": "Who is your target audience?",
+        "wordCount": "Word Count",
+        "wordCountPlaceholder": "Select desired word count",
+        "outline": "Content Outline",
+        "outlinePlaceholder": "Provide an outline or key points (optional)"
+      },
+      "preview": {
+        "description": "Review your generated SEO blog post"
+      }
+    },
+    "instagram-caption": {
+      "title": "Instagram Caption",
+      "description": "Create engaging captions for your Instagram posts",
+      "form": {
+        "title": "Fill in the details",
+        "description": "Provide information to generate your Instagram caption",
+        "imageDescription": "Image Description",
+        "imageDescriptionPlaceholder": "Describe the image you're posting",
+        "topic": "Topic",
+        "topicPlaceholder": "What is your post about?",
+        "tone": "Tone of Voice",
+        "tonePlaceholder": "Select the tone for your caption",
+        "includeEmojis": "Include Emojis",
+        "includeEmojisPlaceholder": "Should the caption include emojis?",
+        "yes": "Yes",
+        "no": "No",
+        "hashtags": "Hashtags",
+        "hashtagsPlaceholder": "Enter hashtags separated by spaces",
+        "callToAction": "Call to Action",
+        "callToActionPlaceholder": "What action do you want readers to take?"
+      },
+      "preview": {
+        "description": "Review your generated Instagram caption"
+      }
+    },
+    "landing-page-copy": {
+      "title": "Landing Page Copy",
+      "description": "Create compelling landing page copy that converts visitors into customers",
+      "form": {
+        "title": "Template Information",
+        "description": "Fill out the form to generate landing page copy",
+        "productService": "Product/Service",
+        "productServicePlaceholder": "What product or service are you promoting?",
+        "targetAudience": "Target Audience",
+        "targetAudiencePlaceholder": "Who is your target audience?",
+        "mainBenefit": "Main Benefit",
+        "mainBenefitPlaceholder": "What is the main benefit of your product/service?",
+        "keyFeatures": "Key Features",
+        "keyFeaturesPlaceholder": "List the key features of your product/service (one per line)",
+        "painPoints": "Pain Points",
+        "painPointsPlaceholder": "What problems does your product/service solve?",
+        "tone": "Tone of Voice",
+        "tonePlaceholder": "Select the tone for your landing page",
+        "callToAction": "Call to Action",
+        "callToActionPlaceholder": "What action do you want visitors to take?",
+        "includeTestimonials": "Include Testimonials",
+        "includeTestimonialsPlaceholder": "Should the copy include testimonial placeholders?"
+      },
+      "preview": {
+        "description": "Your landing page copy will appear here"
+      }
+    },
+    "ad-copy": {
+      "title": "Ad Copy",
+      "description": "Create versatile ad copy for various platforms.",
+      "form": {
+        "title": "Ad Information",
+        "description": "Fill in the details about your ad to generate compelling copy.",
+        "platform": "Platform",
+        "platformPlaceholder": "Select the advertising platform",
+        "productService": "Product/Service",
+        "productServicePlaceholder": "What product or service are you advertising?",
+        "targetAudience": "Target Audience",
+        "targetAudiencePlaceholder": "Who is your target audience?",
+        "mainBenefit": "Main Benefit",
+        "mainBenefitPlaceholder": "What is the main benefit of your product/service?",
+        "tone": "Tone of Voice",
+        "tonePlaceholder": "Select the tone for your ad",
+        "tones": {
+          "persuasive": "Persuasive",
+          "professional": "Professional",
+          "direct": "Direct",
+          "informative": "Informative",
+          "urgent": "Urgent"
+        },
+        "wordCount": "Word Count",
+        "wordCountPlaceholder": "Select the approximate word count",
+        "wordCounts": {
+          "short": "Short (50-100 words)",
+          "medium": "Medium (100-200 words)",
+          "long": "Long (200-300 words)"
+        },
+        "callToAction": "Call to Action",
+        "callToActionPlaceholder": "Select a call to action",
+        "ctas": {
+          "shopNow": "Shop Now",
+          "learnMore": "Learn More",
+          "signUp": "Sign Up",
+          "getStarted": "Get Started",
+          "contactUs": "Contact Us",
+          "bookNow": "Book Now",
+          "download": "Download",
+          "tryForFree": "Try for Free"
+        }
+      },
+      "preview": {
+        "title": "Generated Ad Copy",
+        "description": "Your ad copy has been generated based on your inputs."
+      }
+    },
+    "case-study": {
+      "title": "Case Study",
+      "description": "Create detailed case studies showcasing your success stories",
+      "form": {
+        "title": "Fill in the details",
+        "description": "Provide information to generate your case study",
+        "clientName": "Client/Company Name",
+        "clientNamePlaceholder": "Enter the name of the client or company",
+        "industry": "Industry",
+        "industryPlaceholder": "What industry is the client in?",
+        "challenge": "Challenge/Problem",
+        "challengePlaceholder": "Describe the challenge or problem faced",
+        "solution": "Solution Provided",
+        "solutionPlaceholder": "Describe the solution you provided",
+        "results": "Results/Outcomes",
+        "resultsPlaceholder": "Describe the results or outcomes achieved",
+        "testimonial": "Client Testimonial",
+        "testimonialPlaceholder": "Add a client testimonial (optional)"
+      },
+      "preview": {
+        "description": "Review your generated case study"
+      }
+    },
+    "linkedin-post": {
+      "title": "LinkedIn Post",
+      "description": "Create professional content optimized for LinkedIn's platform",
+      "form": {
+        "title": "Fill in the details",
+        "description": "Provide information to generate your LinkedIn post",
+        "topic": "Topic",
+        "topicPlaceholder": "What is your post about?",
+        "industry": "Industry",
+        "industryPlaceholder": "What industry are you in?",
+        "purpose": "Purpose",
+        "purposePlaceholder": "Select the purpose of your post",
+        "purposes": {
+          "shareInsights": "Share Industry Insights",
+          "showcaseExpertise": "Showcase Expertise",
+          "announceUpdate": "Announce a Company Update",
+          "shareAchievement": "Share a Professional Achievement",
+          "startDiscussion": "Start a Discussion",
+          "promoteProduct": "Promote a Product or Service"
+        },
+        "tone": "Tone of Voice",
+        "tonePlaceholder": "Select the tone for your post",
+        "tones": {
+          "professional": "Professional",
+          "conversational": "Conversational",
+          "authoritative": "Authoritative",
+          "inspirational": "Inspirational",
+          "educational": "Educational",
+          "thoughtful": "Thoughtful"
+        },
+        "includePersonalStory": "Include Personal Story",
+        "includePersonalStoryPlaceholder": "Include a personal story or anecdote?",
+        "includeStatistics": "Include Statistics",
+        "includeStatisticsPlaceholder": "Include statistics or data points?",
+        "callToAction": "Call to Action",
+        "callToActionPlaceholder": "What action do you want readers to take?"
+      },
+      "preview": {
+        "description": "Review your generated LinkedIn post"
+      }
+    },
+    "welcome-email": {
+      "title": "Welcome Email",
+      "description": "Create a warm welcome email for new subscribers",
+      "form": {
+        "title": "Fill in the details",
+        "description": "Provide information to generate your welcome email",
+        "brandName": "Brand Name",
+        "brandNamePlaceholder": "Enter your brand or company name",
+        "audience": "Target Audience",
+        "audiencePlaceholder": "Who are your subscribers?",
+        "tone": "Tone of Voice",
+        "tonePlaceholder": "Select the tone for your email",
+        "tones": {
+          "friendly": "Friendly",
+          "professional": "Professional",
+          "enthusiastic": "Enthusiastic",
+          "formal": "Formal",
+          "casual": "Casual",
+          "conversational": "Conversational"
+        },
+        "keyBenefits": "Key Benefits",
+        "keyBenefitsPlaceholder": "What benefits will subscribers receive?",
+        "nextSteps": "Next Steps",
+        "nextStepsPlaceholder": "What should subscribers do next?",
+        "signatureInfo": "Signature Information",
+        "signatureInfoPlaceholder": "Name and title to include in the signature"
+      },
+      "preview": {
+        "description": "Review your generated welcome email"
+      }
+    },
+    "how-to-guide": {
+      "title": "How-To Guide",
+      "description": "Step-by-step instructional content for your audience",
+      "form": {
+        "title": "Fill in the details",
+        "description": "Provide information to generate your how-to guide",
+        "topic": "Guide Topic",
+        "topicPlaceholder": "What is your how-to guide about?",
+        "audience": "Target Audience",
+        "audiencePlaceholder": "Who is your target audience?",
+        "difficulty": "Difficulty Level",
+        "difficultyPlaceholder": "Select the difficulty level",
+        "difficulties": {
+          "beginner": "Beginner",
+          "intermediate": "Intermediate",
+          "advanced": "Advanced",
+          "expert": "Expert"
+        },
+        "prerequisites": "Prerequisites",
+        "prerequisitesPlaceholder": "List any prerequisites or materials needed",
+        "steps": "Key Steps",
+        "stepsPlaceholder": "Outline the main steps (one per line)",
+        "tips": "Additional Tips",
+        "tipsPlaceholder": "Provide any additional tips or advice"
+      },
+      "preview": {
+        "description": "Review your generated how-to guide"
+      }
+    },
+    "twitter-thread": {
+      "title": "Twitter Thread",
+      "description": "Create engaging multi-tweet content for Twitter/X",
+      "form": {
+        "title": "Fill in the details",
+        "description": "Provide information to generate your Twitter thread",
+        "topic": "Topic",
+        "topicPlaceholder": "What is your thread about?",
+        "audience": "Target Audience",
+        "audiencePlaceholder": "Who is your target audience?",
+        "threadLength": "Thread Length",
+        "threadLengthPlaceholder": "How many tweets in the thread?",
+        "threadLengths": {
+          "short": "3-5 tweets",
+          "medium": "5-7 tweets",
+          "long": "7-10 tweets",
+          "extraLong": "10+ tweets"
+        },
+        "tone": "Tone of Voice",
+        "tonePlaceholder": "Select the tone for your thread",
+        "tones": {
+          "casual": "Casual",
+          "professional": "Professional",
+          "educational": "Educational",
+          "humorous": "Humorous",
+          "controversial": "Controversial",
+          "inspirational": "Inspirational"
+        },
+        "includeStats": "Include Statistics",
+        "includeStatsPlaceholder": "Should the thread include statistics?",
+        "includeQuestions": "Include Questions",
+        "includeQuestionsPlaceholder": "Should the thread include questions to engage followers?",
+        "keyPoints": "Key Points",
+        "keyPointsPlaceholder": "List the key points to cover (one per line)",
+        "callToAction": "Call to Action",
+        "callToActionPlaceholder": "What action do you want readers to take?"
+      },
+      "preview": {
+        "description": "Review your generated Twitter thread"
+      }
+    },
+    "promotional-email": {
+      "title": "Promotional Email",
+      "description": "Create compelling promotional emails that drive sales",
+      "form": {
+        "title": "Fill in the details",
+        "description": "Provide information to generate your promotional email",
+        "subject": "Email Subject",
+        "subjectPlaceholder": "Enter a compelling subject line",
+        "brandName": "Brand Name",
+        "brandNamePlaceholder": "Enter your brand or company name",
+        "promotion": "Promotion Details",
+        "promotionPlaceholder": "Describe the promotion, discount, or special offer",
+        "productService": "Product/Service",
+        "productServicePlaceholder": "What product or service are you promoting?",
+        "audience": "Target Audience",
+        "audiencePlaceholder": "Who is your target audience?",
+        "urgency": "Urgency Factor",
+        "urgencyPlaceholder": "Is there a deadline or limited availability?",
+        "callToAction": "Call to Action",
+        "callToActionPlaceholder": "What action do you want readers to take?",
+        "tone": "Tone of Voice",
+        "tonePlaceholder": "Select the tone for your email",
+        "tones": {
+          "persuasive": "Persuasive",
+          "friendly": "Friendly",
+          "urgent": "Urgent",
+          "professional": "Professional",
+          "enthusiastic": "Enthusiastic"
+        }
+      },
+      "preview": {
+        "description": "Review your generated promotional email"
+      }
+    },
+    "google-ads-copy": {
+      "title": "Google Ads Copy",
+      "description": "Create effective copy for Google search campaigns",
+      "form": {
+        "title": "Ad Information",
+        "description": "Fill in the details about your Google Ads to generate effective copy",
+        "productService": "Product/Service",
+        "productServicePlaceholder": "What product or service are you advertising?",
+        "targetKeywords": "Target Keywords",
+        "targetKeywordsPlaceholder": "Enter target keywords (one per line)",
+        "uniqueSellingPoint": "Unique Selling Point",
+        "uniqueSellingPointPlaceholder": "What makes your offer unique?",
+        "competitiveAdvantage": "Competitive Advantage",
+        "competitiveAdvantagePlaceholder": "How do you stand out from competitors?",
+        "promotion": "Promotion",
+        "promotionPlaceholder": "Any special promotion to include?",
+        "callToAction": "Call to Action",
+        "callToActionPlaceholder": "Select a call to action"
+      },
+      "result": {
+        "title": "Generated Ad Copy",
+        "description": "Your Google Ads copy has been generated based on your inputs"
+      }
+    },
+    "facebook-ad-copy": {
+      "title": "Facebook Ad Copy",
+      "description": "Create compelling ad copy for Facebook campaigns",
+      "form": {
+        "title": "Ad Information",
+        "description": "Fill in the details about your Facebook ad to generate compelling copy",
+        "productService": "Product/Service",
+        "productServicePlaceholder": "What product or service are you advertising?",
+        "productServiceRequired": "Product/Service is required",
+        "targetAudience": "Target Audience",
+        "targetAudiencePlaceholder": "Who is your target audience?",
+        "targetAudienceRequired": "Target audience is required",
+        "primaryBenefit": "Primary Benefit",
+        "primaryBenefitPlaceholder": "What is the main benefit of your product/service?",
+        "primaryBenefitRequired": "Primary benefit is required",
+        "secondaryBenefits": "Secondary Benefits",
+        "secondaryBenefitsPlaceholder": "List any additional benefits",
+        "tone": "Tone of Voice",
+        "tonePlaceholder": "Select the tone for your ad",
+        "tones": {
+          "persuasive": "Persuasive",
+          "urgent": "Urgent",
+          "friendly": "Friendly",
+          "professional": "Professional",
+          "humorous": "Humorous",
+          "emotional": "Emotional"
+        },
+        "offer": "Special Offer",
+        "offerPlaceholder": "Any special offer or discount to include?",
+        "callToAction": "Call to Action",
+        "callToActionPlaceholder": "Select a call to action",
+        "callToActionRequired": "Call to action is required",
+        "ctas": {
+          "shopNow": "Shop Now",
+          "learnMore": "Learn More",
+          "signUp": "Sign Up",
+          "getStarted": "Get Started",
+          "contactUs": "Contact Us",
+          "bookNow": "Book Now",
+          "download": "Download",
+          "tryForFree": "Try for Free"
+        }
+      },
+      "preview": {
+        "title": "Generated Ad Copy",
+        "description": "Your Facebook ad copy has been generated based on your inputs"
+      }
+    },
+    "feature-comparison": {
+      "title": "Feature Comparison",
+      "description": "Create detailed feature comparisons between your product and competitors",
+      "form": {
+        "title": "Fill in the details",
+        "description": "Provide information to generate your feature comparison",
+        "productName": "Your Product Name",
+        "productNamePlaceholder": "e.g., UltraBoost Running Shoes",
+        "competitorProducts": "Competitor Products",
+        "competitorProductsPlaceholder": "List competitor products to compare against (one per line)",
+        "keyFeatures": "Key Features to Compare",
+        "keyFeaturesPlaceholder": "List the main features to compare (e.g., price, durability, performance)",
+        "targetAudience": "Target Audience",
+        "targetAudiencePlaceholder": "e.g., Runners, Athletes, Fitness Enthusiasts",
+        "comparisonStyle": "Comparison Style",
+        "comparisonStylePlaceholder": "Select style"
+      },
+      "preview": {
+        "description": "Review your generated feature comparison"
+      }
+    }
+  },
+  "aiTools": {
+    "title": "AI Tools",
+    "subtitle": "Powerful AI tools to help you create, edit, and enhance your content.",
+    "categories": {
+      "allTools": "All Tools",
+      "contentCreation": "Content Creation",
+      "editing": "Editing",
+      "media": "Media",
+      "ideation": "Ideation"
+    },
+    "tools": {
+      "blogWriter": {
+        "title": "Blog Writer",
+        "description": "Generate SEO-optimized blog posts with AI"
+      },
+      "socialMedia": {
+        "title": "Social Media",
+        "description": "Create engaging social media content"
+      },
+      "contentImprover": {
+        "title": "Content Improver",
+        "description": "Enhance your existing content"
+      },
+      "emailWriter": {
+        "title": "Email Writer",
+        "description": "Draft professional emails quickly"
+      },
+      "brainstorming": {
+        "title": "Brainstorming",
+        "description": "Generate ideas for your content"
+      },
+      "grammarChecker": {
+        "title": "Grammar Checker",
+        "description": "Fix grammar and spelling errors"
+      }
+    }
+  },
+  "translationTool": {
+    "title": "Translation",
+    "subtitle": "Translate your content into multiple languages with AI assistance.",
+    "textTranslation": "Text Translation",
+    "translateFrom": "Translate from",
+    "translateTo": "Translate to",
+    "enterText": "Enter text to translate...",
+    "translationOutput": "Translation output...",
+    "characters": "characters",
+    "translate": "Translate",
+    "translating": "Translating...",
+    "saveTranslation": "Save Translation",
+    "saving": "Saving...",
+    "swapLanguages": "Swap languages",
+    "errors": {
+      "translationFailed": "Translation failed. Please try again.",
+      "noTranslation": "No translation to save",
+      "saveFailed": "Failed to save translation. Please try again."
+    },
+    "success": {
+      "translationSaved": "Translation saved successfully"
+    }
+  },
+  "imageGeneration": {
+    "title": "Image Generation",
+    "subtitle": "Generate images from text prompts using AI",
+    "tabs": {
+      "generate": "Generate",
+      "result": "Result"
+    },
+    "form": {
+      "title": "Title (Optional)",
+      "titlePlaceholder": "Enter a title for your image",
+      "prompt": "Image Prompt",
+      "promptPlaceholder": "Describe the image you want to generate",
+      "style": "Style",
+      "dimensions": "Dimensions",
+      "generateButton": "Generate Image",
+      "generating": "Generating..."
+    },
+    "result": {
+      "title": "Generated Image",
+      "subtitle": "Here's your generated image based on your prompt",
+      "prompt": "Prompt",
+      "style": "Style",
+      "dimensions": "Dimensions",
+      "noImage": "No image generated yet.",
+      "goToGenerator": "Go to Generator",
+      "downloadButton": "Download Image",
+      "saveButton": "Save to Gallery",
+      "saving": "Saving..."
+    },
+    "gallery": {
+      "title": "Your Generated Images",
+      "noImages": "No images generated yet. Create your first image above!",
+      "download": "Download",
+      "style": "Style"
+    },
+    "dimensions": {
+      "square": "Square (1024x1024)",
+      "portrait": "Portrait (1024x1792)",
+      "landscape": "Landscape (1792x1024)"
+    },
+    "styles": {
+      "none": "None",
+      "3dRender": "3D Render",
+      "pixelArt": "Pixel Art",
+      "digitalArt": "Digital Art",
+      "photorealistic": "Photorealistic",
+      "anime": "Anime",
+      "watercolor": "Watercolor",
+      "oilPainting": "Oil Painting",
+      "pencilDrawing": "Pencil Drawing"
+    },
+    "messages": {
+      "enterPrompt": "Please enter a prompt",
+      "generationSuccess": "Image generated successfully!",
+      "generationError": "Failed to generate image",
+      "saveSuccess": "Image saved successfully!",
+      "saveError": "Failed to save image",
+      "generating": "Generating your image...",
+      "generatingTime": "This may take up to 30 seconds"
+    }
+  },
+  "billing": {
+    "title": "Billing",
+    "subtitle": "Manage your subscription and billing details.",
+    "loading": "Loading your subscription details...",
+    "tabs": {
+      "overview": "Overview",
+      "plans": "Plans",
+      "invoices": "Invoices"
+    },
+    "subscription": {
+      "title": "Subscription Overview",
+      "description": "Your current plan and subscription details.",
+      "currentPlan": "Current Plan",
+      "plan": "Plan",
+      "price": "Price",
+      "renewalDate": "Renewal Date",
+      "manageSubscription": "Manage Subscription",
+      "processing": "Processing...",
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      }
+    },
+    "credits": {
+      "title": "AI Credits Usage",
+      "monthlyCredits": "Monthly Credits",
+      "remaining": "credits remaining this month",
+      "upgrade": "Upgrade to"
+    },
+    "paymentMethod": {
+      "title": "Payment Method",
+      "expires": "Expires",
+      "update": "Update"
+    },
+    "plans": {
+      "mostPopular": "Most Popular",
+      "month": "month",
+      "currentPlan": "Current Plan",
+      "subscribeTo": "Subscribe to"
+    },
+    "invoices": {
+      "title": "Billing History",
+      "description": "View and download your past invoices.",
+      "noInvoices": "No invoices yet",
+      "noInvoicesDesc": "You're on the free plan. Upgrade to get access to premium features.",
+      "noInvoicesSubscribed": "Your invoices will appear here once they're generated.",
+      "upgradeToPro": "Upgrade to Pro",
+      "download": "Download"
+    },
+    "features": {
+      "documentsPerMonth": "documents per month",
+      "aiCredits": "AI credits",
+      "basicTemplates": "Basic templates",
+      "allTemplates": "All templates",
+      "standardSupport": "Standard support",
+      "prioritySupport": "Priority support",
+      "teamCollaboration": "Team collaboration",
+      "members": "members",
+      "customTemplates": "Custom templates",
+      "apiAccess": "API access",
+      "advancedAnalytics": "Advanced analytics",
+      "unlimited": "Unlimited"
+    },
+    "messages": {
+      "subscriptionUpdated": "Subscription Updated",
+      "subscriptionUpdatedDesc": "Your subscription has been updated successfully. If you don't see your new plan, please click the refresh button.",
+      "error": "Error",
+      "subscriptionSuccess": "Your subscription has been updated successfully!",
+      "subscriptionCanceled": "Subscription update was canceled."
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account settings and preferences.",
+    "saving": "Saving...",
+    "updating": "Updating...",
+    "saveChanges": "Save Changes",
+    "tabs": {
+      "profile": "Profile",
+      "account": "Account",
+      "notifications": "Notifications"
+    },
+    "profile": {
+      "title": "Profile",
+      "description": "Manage your public profile information.",
+      "profileImage": "Profile Image",
+      "uploadNewImage": "Upload New Image",
+      "removeImage": "Remove",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "bio": "Bio",
+      "bioPlaceholder": "Tell us about yourself"
+    },
+    "account": {
+      "title": "Account",
+      "description": "Manage your account settings and security.",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm Password",
+      "updatePassword": "Update Password",
+      "twoFactorAuth": "Two-Factor Authentication",
+      "enable2FA": "Enable 2FA",
+      "enable2FADescription": "Add an extra layer of security to your account.",
+      "dangerZone": "Danger Zone",
+      "deleteAccount": "Delete Account",
+      "deleteAccountDescription": "Permanently delete your account and all your data.",
+      "deleteAccountDisabled": "This feature is currently disabled for your safety."
+    },
+    "notifications": {
+      "title": "Notifications",
+      "description": "Configure how you receive notifications.",
+      "emailNotifications": "Email Notifications",
+      "documentUpdates": "Document Updates",
+      "documentUpdatesDescription": "Receive notifications when your documents are updated.",
+      "teamActivity": "Team Activity",
+      "teamActivityDescription": "Receive notifications about team member activities.",
+      "marketingUpdates": "Marketing Updates",
+      "marketingUpdatesDescription": "Receive updates about new features and promotions.",
+      "pushNotifications": "Push Notifications",
+      "enablePushNotifications": "Enable Push Notifications",
+      "enablePushNotificationsDescription": "Receive notifications in your browser."
+    },
+    "errors": {
+      "profileSaveFailed": "Failed to save profile",
+      "notificationSaveFailed": "Failed to save notification settings",
+      "unexpectedError": "An unexpected error occurred",
+      "allPasswordFieldsRequired": "All password fields are required",
+      "passwordsDontMatch": "New passwords don't match",
+      "incorrectPassword": "Current password is incorrect",
+      "passwordUpdateFailed": "Failed to update password"
+    },
+    "success": {
+      "profileSaved": "Profile saved successfully",
+      "notificationSaved": "Notification settings saved successfully",
+      "passwordUpdated": "Password updated successfully"
+    }
+  }
+}

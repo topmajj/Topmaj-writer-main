@@ -1,0 +1,96 @@
+/* RTL specific fixes for dashboard layout */
+[dir="rtl"] .dashboard-layout {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Fix header positioning in RTL mode */
+[dir="rtl"] .dashboard-header {
+  width: calc(100% - 280px) !important;
+  margin-right: 280px !important;
+  position: sticky;
+  z-index: 20;
+}
+
+/* Fix content positioning in RTL mode */
+[dir="rtl"] .dashboard-content {
+  width: calc(100% - 280px) !important;
+  margin-right: 280px !important;
+}
+
+/* Ensure sidebar stays fixed on the right */
+[dir="rtl"] .dashboard-sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 280px;
+  z-index: 30;
+}
+
+/* Fix for collapsed sidebar */
+[dir="rtl"] [data-collapsed="true"] + .dashboard-content,
+[dir="rtl"] [data-collapsed="true"] ~ .dashboard-header {
+  width: calc(100% - 80px) !important;
+  margin-right: 80px !important;
+}
+
+/* Mobile fixes for RTL layout */
+@media (max-width: 768px) {
+  /* Reset header and content positioning on mobile */
+  [dir="rtl"] .dashboard-header,
+  [dir="rtl"] .dashboard-content {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  /* Handle sidebar on mobile */
+  [dir="rtl"] .dashboard-sidebar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* When sidebar is open on mobile */
+  [dir="rtl"] .dashboard-sidebar[data-state="open"] {
+    transform: translateX(0);
+  }
+
+  /* Fix for mobile menu button in RTL */
+  [dir="rtl"] .mobile-menu-button {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  /* Ensure content is below header on mobile */
+  [dir="rtl"] .dashboard-layout {
+    flex-direction: column;
+  }
+
+  /* Fix for mobile sidebar overlay */
+  [dir="rtl"] .sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 40;
+    display: none;
+  }
+
+  [dir="rtl"] .sidebar-overlay[data-state="open"] {
+    display: block;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  [dir="rtl"] .dashboard-header {
+    padding: 0.5rem;
+  }
+
+  [dir="rtl"] .dashboard-content {
+    padding: 0.5rem;
+  }
+}

@@ -1,0 +1,78 @@
+/* RTL support for the application */
+[dir="rtl"] .ml-auto {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .mr-2 {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .ml-1 {
+  margin-left: 0;
+  margin-right: 0.25rem;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .items-start {
+  align-items: flex-end;
+}
+
+/* Fix dropdown menu alignment in RTL */
+[dir="rtl"] [data-radix-popper-content-wrapper] {
+  transform-origin: right top !important;
+}
+
+/* RTL Sidebar specific styles */
+[dir="rtl"] .rtl-sidebar {
+  border-right: none;
+  border-left: 1px solid hsl(var(--border));
+}
+
+[dir="rtl"] .justify-start {
+  justify-content: flex-end;
+}
+
+[dir="rtl"] .-ml-1 {
+  margin-left: 0;
+  margin-right: -0.25rem;
+}
+
+[dir="rtl"] .gap-2 > *:first-child {
+  margin-right: 0;
+}
+
+[dir="rtl"] .gap-2 > *:last-child {
+  margin-left: 0;
+}
+
+/* Fix RTL layout issues */
+[dir="rtl"] .sidebar-wrapper {
+  right: 0;
+  left: auto;
+}
+
+[dir="rtl"] .sidebar-content {
+  right: 0;
+  left: auto;
+}
+
+/* Fix dashboard content in RTL */
+[dir="rtl"] .dashboard-content {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* Fix tabs in RTL */
+[dir="rtl"] [role="tablist"] {
+  flex-direction: row-reverse;
+}
+
+/* Fix charts in RTL */
+[dir="rtl"] .recharts-wrapper {
+  direction: ltr;
+}

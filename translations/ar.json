@@ -1,0 +1,935 @@
+{
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "welcome": "مرحبًا بعودتك! إليك نظرة عامة على نشاط الكتابة الخاص بك.",
+    "recentDocuments": "المستندات الحديثة",
+    "aiTools": "أدوات الذكاء الاصطناعي"
+  },
+  "navigation": {
+    "dashboard": "لوحة التحكم",
+    "documents": "المستندات",
+    "templates": "القوالب",
+    "aiTools": "أدوات الذكاء الاصطناعي",
+    "content": "المحتوى",
+    "translation": "الترجمة",
+    "imageGeneration": "إنشاء الصور",
+    "billing": "الفواتير",
+    "settings": "الإعدادات",
+    "account": "الحساب",
+    "main": "الرئيسية"
+  },
+  "common": {
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج",
+    "search": "بحث",
+    "create": "إنشاء",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "newDocument": "مستند جديد",
+    "favorites": "المفضلة",
+    "loading": "جاري التحميل...",
+    "calculating": "جاري الحساب...",
+    "menu": "القائمة",
+    "close": "إغلاق",
+    "useTool": "استخدام الأداة",
+    "back": "رجوع",
+    "refresh": "تحديث",
+    "form": "النموذج",
+    "preview": "معاينة",
+    "generateContent": "إنشاء المحتوى",
+    "generating": "جاري الإنشاء...",
+    "generatedContent": "المحتوى المنشأ",
+    "generatingContent": "جاري إنشاء المحتوى... قد يستغرق هذا لحظة.",
+    "fillFormToGenerate": "املأ النموذج وانقر على \"إنشاء المحتوى\" لرؤية النتيجة هنا.",
+    "backToForm": "العودة إلى النموذج",
+    "saveToDocuments": "حفظ في المستندات",
+    "saving": "جاري الحفظ...",
+    "yes": "نعم",
+    "no": "لا",
+    "authError": "يجب أن تكون مسجل الدخول لإنشاء المحتوى",
+    "requiredFields": "يرجى ملء جميع الحقول المطلوبة",
+    "contentGenerated": "تم إنشاء المحتوى بنجاح!",
+    "generationError": "حدث خطأ أثناء إنشاء المحتوى",
+    "noContentToSave": "لا يوجد محتوى للحفظ أو المستخدم غير مصادق عليه",
+    "contentSaved": "تم حفظ المحتوى في المستندات",
+    "savingError": "حدث خطأ أثناء حفظ المحتوى"
+  },
+  "language": {
+    "english": "الإنجليزية",
+    "arabic": "العربية"
+  },
+  "metrics": {
+    "wordsGenerated": "الكلمات المنشأة",
+    "documentsCreated": "المستندات المنشأة",
+    "promptsUsed": "طلبات الذكاء الاصطناعي المستخدمة",
+    "usage": "الاستخدام",
+    "fromLastMonth": "من الشهر الماضي",
+    "creditsUsed": "رصيد مستخدم"
+  },
+  "analytics": {
+    "title": "نظرة عامة على التحليلات",
+    "description": "عرض تحليلات إنشاء المحتوى الخاص بك على مر الوقت.",
+    "wordsGenerated": "الكلمات المنشأة",
+    "documents": "المستندات",
+    "contentTypes": "أنواع المحتوى",
+    "loadingWordCount": "جاري تحميل بيانات عدد الكلمات...",
+    "loadingAnalytics": "جاري تحميل بيانات التحليلات...",
+    "loadingContentType": "جاري تحميل بيانات نوع المحتوى...",
+    "noData": "لا توجد بيانات متاحة. ابدأ في إنشاء المحتوى لرؤية التحليلات.",
+    "words": "كلمات",
+    "items": "عناصر",
+    "words": "كلمات",
+    "items": "عناصر",
+    "contentCreated": "المحتوى المنشأ",
+    "date": "التاريخ",
+    "count": "العدد"
+  },
+  "documents": {
+    "title": "المستندات",
+    "subtitle": "إنشاء وإدارة وتنظيم المحتوى الذي تم إنشاؤه بواسطة الذكاء الاصطناعي.",
+    "searchPlaceholder": "البحث في المستندات...",
+    "filter": "تصفية",
+    "newDocument": "مستند جديد",
+    "allDocuments": "جميع المستندات",
+    "recent": "الأخيرة",
+    "folders": "المجلدات",
+    "authError": "خطأ في المصادقة. يرجى تسجيل الدخول مرة أخرى.",
+    "fetchError": "فشل في جلب المستندات",
+    "loadError": "فشل في تحميل المستندات. يرجى المحاولة مرة أخرى لاحقًا.",
+    "noDocumentsFound": "لم يتم العثور على مستندات",
+    "noDocuments": "لم يتم العثور على مستندات",
+    "createFirstDocument": "إنشاء المستند الأول الخاص بك",
+    "createNewDocument": "إنشاء مستند جديد",
+    "noRecentDocuments": "لم يتم العثور على مستندات حديثة",
+    "today": "اليوم",
+    "yesterday": "الأمس",
+    "daysAgo": "منذ {days} أيام",
+    "weeksAgo": "منذ {weeks} أسابيع",
+    "defaultCategory": "محتوى",
+    "words": "كلمات",
+    "preview": "معاينة",
+    "copyContent": "نسخ المحتوى",
+    "delete": "حذف",
+    "rename": "إعادة تسمية",
+    "move": "نقل",
+    "openFolder": "فتح المجلد",
+    "documentsCount": "مستندات",
+    "close": "إغلاق",
+    "created": "تم الإنشاء",
+    "copiedSuccess": "تم نسخ المحتوى إلى الحافظة",
+    "copyError": "فشل في نسخ المحتوى",
+    "deleteConfirm": "هل أنت متأكد أنك تريد حذف هذا المستند؟",
+    "deleteSuccess": "تم حذف المستند بنجاح",
+    "deleteError": "فشل في حذف المستند"
+  },
+  "templates": {
+    "title": "القوالب",
+    "subtitle": "استخدم القوالب الجاهزة لإنشاء المحتوى بسرعة.",
+    "searchPlaceholder": "البحث في القوالب...",
+    "filter": "تصفية",
+    "createTemplate": "إنشاء قالب",
+    "allTemplates": "جميع القوالب",
+    "useTemplate": "استخدام القالب",
+    "categories": {
+      "blogPosts": "مقالات المدونة",
+      "socialMedia": "وسائل التواصل الاجتماعي",
+      "email": "البريد الإلكتروني",
+      "ads": "الإعلانات",
+      "websiteCopy": "نصوص الموقع",
+      "ecommerce": "التجارة الإلكترونية"
+    },
+    "descriptions": {
+      "blogPostIntro": "إنشاء مقدمة جذابة لمقال المدونة الخاص بك",
+      "productDescription": "إنشاء أوصاف منتجات مقنعة",
+      "socialMediaPost": "إنشاء محتوى جذاب لوسائل التواصل الاجتماعي",
+      "emailNewsletter": "صياغة نشرات إخبارية احترافية عبر البريد الإلكتروني",
+      "seoBlogPost": "إنشاء محتوى مدونة محسن لمحركات البحث",
+      "instagramCaption": "إنشاء تعليقات جذابة لإنستغرام",
+      "landingPageCopy": "نصوص مقنعة لصفحات الهبوط الخاصة بك",
+      "adCopy": "نصوص إعلانية مقنعة لمختلف المنصات",
+      "caseStudy": "إنشاء دراسات حالة مفصلة تعرض قصص نجاحك",
+      "linkedinPost": "محتوى احترافي مخصص لمنصة لينكد إن",
+      "welcomeEmail": "سلسلة رسائل ترحيبية للمشتركين الجدد",
+      "facebookAdCopy": "نصوص إعلانية مستهدفة لحملات فيسبوك",
+      "aboutUsPage": "قصة شركة مقنعة لموقعك الإلكتروني",
+      "howToGuide": "محتوى إرشادي خطوة بخطوة للجمهور الخاص بك",
+      "twitterThread": "محتوى متعدد التغريدات جذاب لتويتر/إكس",
+      "promotionalEmail": "رسائل بريد إلكتروني تركز على المبيعات للعروض والترويجات الخاصة",
+      "googleAdsCopy": "نصوص إعلانية محسنة لحملات بحث جوجل",
+      "faqPage": "محتوى شامل للأسئلة الشائعة لموقعك الإلكتروني",
+      "featureComparison": "إبراز ميزات المنتج وفوائده مقارنة بالمنافسين"
+    },
+    "blog-post-introduction": {
+      "title": "مقدمة منشور المدونة",
+      "description": "إنشاء مقدمة جذابة لمنشور مدونتك",
+      "form": {
+        "title": "املأ التفاصيل",
+        "description": "قدم معلومات لإنشاء مقدمة منشور مدونتك",
+        "topic": "موضوع المدونة",
+        "topicPlaceholder": "أدخل الموضوع الرئيسي لمنشور مدونتك",
+        "audience": "الجمهور المستهدف",
+        "audiencePlaceholder": "من هو جمهورك المستهدف؟",
+        "tone": "نبرة الصوت",
+        "tonePlaceholder": "حدد النبرة لمحتواك",
+        "keyPoints": "النقاط الرئيسية",
+        "keyPointsPlaceholder": "اذكر النقاط الرئيسية التي تريد تغطيتها (اختياري)"
+      },
+      "preview": {
+        "description": "راجع مقدمة منشور المدونة التي تم إنشاؤها"
+      }
+    },
+    "product-description": {
+      "title": "وصف المنتج",
+      "description": "إنشاء أوصاف منتجات مقنعة تؤدي إلى التحويل",
+      "form": {
+        "title": "املأ التفاصيل",
+        "description": "قدم معلومات لإنشاء وصف المنتج الخاص بك",
+        "productName": "اسم المنتج",
+        "productNamePlaceholder": "أدخل اسم المنتج الخاص بك",
+        "productType": "نوع/فئة المنتج",
+        "productTypePlaceholder": "ما هو نوع هذا المنتج؟",
+        "keyFeatures": "الميزات والفوائد الرئيسية",
+        "keyFeaturesPlaceholder": "اذكر الميزات والفوائد الرئيسية للمنتج الخاص بك",
+        "targetAudience": "الجمهور المستهدف",
+        "targetAudiencePlaceholder": "لمن هذا المنتج؟",
+        "pricePoint": "مستوى السعر",
+        "pricePointPlaceholder": "مثال: فاخر، متوسط، اقتصادي",
+        "tone": "نبرة الصوت",
+        "tonePlaceholder": "حدد النبرة لمحتواك",
+        "wordCount": "عدد الكلمات",
+        "wordCountPlaceholder": "حدد الطول المطلوب",
+        "additionalInstructions": "تعليمات إضافية",
+        "additionalInstructionsPlaceholder": "أي متطلبات أو معلومات محددة لتضمينها"
+      },
+      "preview": {
+        "description": "راجع وصف المنتج الذي تم إنشاؤه"
+      }
+    },
+    "social-media-post": {
+      "title": "منشور وسائل التواصل الاجتماعي",
+      "description": "إنشاء محتوى جذاب لمنصات التواصل الاجتماعي الخاصة بك",
+      "form": {
+        "title": "املأ التفاصيل",
+        "description": "قدم معلومات لإنشاء منشور التواصل الاجتماعي الخاص بك",
+        "platform": "المنصة",
+        "platformPlaceholder": "اختر منصة التواصل الاجتماعي",
+        "topic": "الموضوع",
+        "topicPlaceholder": "ما هو موضوع منشورك؟",
+        "audience": "الجمهور المستهدف",
+        "audiencePlaceholder": "من هو جمهورك المستهدف؟",
+        "tone": "نبرة الصوت",
+        "tonePlaceholder": "حدد النبرة لمحتواك",
+        "goal": "الهدف",
+        "goalPlaceholder": "ما هو هدف هذا المنشور؟ (مثال: زيادة حركة المرور، زيادة التفاعل)",
+        "hashtags": "الهاشتاغات",
+        "hashtagsPlaceholder": "أدخل الهاشتاغات مفصولة بمسافات",
+        "callToAction": "دعوة للعمل",
+        "callToActionPlaceholder": "ما هو الإجراء الذي تريد من القراء اتخاذه؟"
+      },
+      "preview": {
+        "description": "راجع منشور التواصل الاجتماعي الذي تم إنشاؤه"
+      }
+    },
+    "newsletter": {
+      "title": "النشرة الإخبارية",
+      "description": "إنشاء نشرات إخبارية احترافية عبر البريد الإلكتروني للجمهور الخاص بك",
+      "form": {
+        "title": "املأ التفاصيل",
+        "description": "قدم معلومات لإنشاء النشرة الإخبارية الخاصة بك",
+        "newsletterName": "اسم النشرة الإخبارية",
+        "newsletterNamePlaceholder": "أدخل اسم النشرة الإخبارية الخاصة بك",
+        "topic": "الموضوع الرئيسي",
+        "topicPlaceholder": "ما هو الموضوع الرئيسي لهذه النشرة الإخبارية؟",
+        "audience": "الجمهور المستهدف",
+        "audiencePlaceholder": "من هو جمهورك المستهدف؟",
+        "tone": "نبرة الصوت",
+        "tonePlaceholder": "حدد النبرة لمحتواك",
+        "keyPoints": "النقاط الرئيسية",
+        "keyPointsPlaceholder": "اذكر النقاط الرئيسية التي تريد تغطيتها",
+        "callToAction": "دعوة للعمل",
+        "callToActionPlaceholder": "ما هو الإجراء الذي تريد من القراء اتخاذه؟",
+        "additionalInfo": "معلومات إضافية",
+        "additionalInfoPlaceholder": "أي تفاصيل أخرى ترغب في تضمينها"
+      },
+      "preview": {
+        "description": "راجع النشرة الإخبارية التي تم إنشاؤها"
+      }
+    },
+    "seo-blog-post": {
+      "title": "مقال مدونة محسن لمحركات البحث",
+      "description": "إنشاء محتوى مدونة محسن لمحركات البحث",
+      "form": {
+        "title": "املأ التفاصيل",
+        "description": "قدم معلومات لإنشاء مقال مدونة محسن لمحركات البحث",
+        "primaryKeyword": "الكلمة المفتاحية الرئيسية",
+        "primaryKeywordPlaceholder": "أدخل كلمتك المفتاحية الرئيسية",
+        "secondaryKeywords": "الكلمات المفتاحية الثانوية",
+        "secondaryKeywordsPlaceholder": "أدخل الكلمات المفتاحية الثانوية مفصولة بفواصل",
+        "topic": "موضوع المدونة",
+        "topicPlaceholder": "ما هو موضوع مقال مدونتك؟",
+        "audience": "الجمهور المستهدف",
+        "audiencePlaceholder": "من هو جمهورك المستهدف؟",
+        "wordCount": "عدد الكلمات",
+        "wordCountPlaceholder": "حدد عدد الكلمات المطلوب",
+        "outline": "مخطط المحتوى",
+        "outlinePlaceholder": "قدم مخططًا أو نقاطًا رئيسية (اختياري)"
+      },
+      "preview": {
+        "description": "راجع مقال المدونة المحسن لمحركات البحث الذي تم إنشاؤه"
+      }
+    },
+    "instagram-caption": {
+      "title": "تعليق إنستغرام",
+      "description": "إنشاء تعليقات جذابة لمنشورات إنستغرام الخاصة بك",
+      "form": {
+        "title": "املأ التفاصيل",
+        "description": "قدم معلومات لإنشاء تعليق إنستغرام الخاص بك",
+        "imageDescription": "وصف الصورة",
+        "imageDescriptionPlaceholder": "صف الصورة التي تنشرها",
+        "topic": "الموضوع",
+        "topicPlaceholder": "ما هو موضوع منشورك؟",
+        "tone": "نبرة الصوت",
+        "tonePlaceholder": "حدد النبرة لتعليقك",
+        "includeEmojis": "تضمين الرموز التعبيرية",
+        "includeEmojisPlaceholder": "هل يجب أن يتضمن التعليق رموزًا تعبيرية؟",
+        "hashtags": "الهاشتاغات",
+        "hashtagsPlaceholder": "أدخل الهاشتاغات مفصولة بمسافات",
+        "callToAction": "دعوة للعمل",
+        "callToActionPlaceholder": "ما هو الإجراء الذي تريد من القراء اتخاذه؟"
+      },
+      "preview": {
+        "description": "راجع تعليق إنستغرام الذي تم إنشاؤه"
+      }
+    },
+    "landing-page-copy": {
+      "title": "نسخة صفحة الهبوط",
+      "description": "إنشاء نسخة صفحة هبوط مقنعة تحول الزوار إلى عملاء",
+      "form": {
+        "title": "معلومات القالب",
+        "description": "املأ النموذج لإنشاء نسخة صفحة الهبوط",
+        "productService": "المنتج/الخدمة",
+        "productServicePlaceholder": "ما هو المنتج أو الخدمة التي تروج لها؟",
+        "targetAudience": "الجمهور المستهدف",
+        "targetAudiencePlaceholder": "من هو جمهورك المستهدف؟",
+        "mainBenefit": "الفائدة الرئيسية",
+        "mainBenefitPlaceholder": "ما هي الفائدة الرئيسية لمنتجك/خدمتك؟",
+        "keyFeatures": "الميزات الرئيسية",
+        "keyFeaturesPlaceholder": "اذكر الميزات الرئيسية لمنتجك/خدمتك (واحدة في كل سطر)",
+        "painPoints": "نقاط الألم",
+        "painPointsPlaceholder": "ما هي المشاكل التي يحلها منتجك/خدمتك؟",
+        "tone": "نبرة الصوت",
+        "tonePlaceholder": "اختر النبرة لصفحة الهبوط الخاصة بك",
+        "callToAction": "دعوة للعمل",
+        "callToActionPlaceholder": "ما هو الإجراء الذي تريد من الزوار اتخاذه؟",
+        "includeTestimonials": "تضمين الشهادات",
+        "includeTestimonialsPlaceholder": "هل يجب أن تتضمن النسخة أماكن للشهادات؟"
+      },
+      "preview": {
+        "description": "ستظهر نسخة صفحة الهبوط الخاصة بك هنا"
+      }
+    },
+    "ad-copy": {
+      "title": "نص إعلاني",
+      "description": "إنشاء نصوص إعلانية متنوعة لمختلف المنصات.",
+      "form": {
+        "title": "معلومات الإعلان",
+        "description": "املأ التفاصيل حول إعلانك لإنشاء نص مقنع.",
+        "platform": "المنصة",
+        "platformPlaceholder": "اختر منصة الإعلان",
+        "productService": "المنتج/الخدمة",
+        "productServicePlaceholder": "ما هو المنتج أو الخدمة التي تعلن عنها؟",
+        "targetAudience": "الجمهور المستهدف",
+        "targetAudiencePlaceholder": "من هو جمهورك المستهدف؟",
+        "mainBenefit": "الفائدة الرئيسية",
+        "mainBenefitPlaceholder": "ما هي الفائدة الرئيسية لمنتجك/خدمتك؟",
+        "tone": "نبرة الصوت",
+        "tonePlaceholder": "اختر النبرة لإعلانك",
+        "tones": {
+          "persuasive": "مقنعة",
+          "professional": "احترافية",
+          "direct": "مباشرة",
+          "informative": "إعلامية",
+          "urgent": "عاجلة"
+        },
+        "wordCount": "عدد الكلمات",
+        "wordCountPlaceholder": "اختر العدد التقريبي للكلمات",
+        "wordCounts": {
+          "short": "قصير (50-100 كلمة)",
+          "medium": "متوسط (100-200 كلمة)",
+          "long": "طويل (200-300 كلمة)"
+        },
+        "callToAction": "دعوة للعمل",
+        "callToActionPlaceholder": "اختر دعوة للعمل",
+        "ctas": {
+          "shopNow": "تسوق الآن",
+          "learnMore": "اعرف المزيد",
+          "signUp": "سجل الآن",
+          "getStarted": "ابدأ الآن",
+          "contactUs": "اتصل بنا",
+          "bookNow": "احجز الآن",
+          "download": "تنزيل",
+          "tryForFree": "جرب مجانًا"
+        }
+      },
+      "preview": {
+        "title": "النص الإعلاني المنشأ",
+        "description": "تم إنشاء النص الإعلاني الخاص بك بناءً على مدخلاتك."
+      }
+    },
+    "case-study": {
+      "title": "دراسة حالة",
+      "description": "إنشاء دراسات حالة مفصلة تعرض قصص نجاحك",
+      "form": {
+        "title": "املأ التفاصيل",
+        "description": "قدم معلومات لإنشاء دراسة الحالة الخاصة بك",
+        "clientName": "اسم العميل/الشركة",
+        "clientNamePlaceholder": "أدخل اسم العميل أو الشركة",
+        "industry": "الصناعة",
+        "industryPlaceholder": "ما هي الصناعة التي يعمل فيها العميل؟",
+        "challenge": "التحدي/المشكلة",
+        "challengePlaceholder": "صف التحدي أو المشكلة التي واجهتها",
+        "solution": "الحل المقدم",
+        "solutionPlaceholder": "صف الحل الذي قدمته",
+        "results": "النتائج/المخرجات",
+        "resultsPlaceholder": "صف النتائج أو المخرجات التي تم تحقيقها",
+        "testimonial": "شهادة العميل",
+        "testimonialPlaceholder": "أضف شهادة من العميل (اختياري)"
+      },
+      "preview": {
+        "description": "راجع دراسة الحالة التي تم إنشاؤها"
+      }
+    },
+    "linkedin-post": {
+      "title": "منشور لينكد إن",
+      "description": "إنشاء محتوى احترافي مخصص لمنصة لينكد إن",
+      "form": {
+        "title": "املأ التفاصيل",
+        "description": "قدم معلومات لإنشاء منشور لينكد إن الخاص بك",
+        "topic": "الموضوع",
+        "topicPlaceholder": "ما هو موضوع منشورك؟",
+        "industry": "الصناعة",
+        "industryPlaceholder": "ما هي الصناعة التي تعمل فيها؟",
+        "purpose": "الغرض",
+        "purposePlaceholder": "اختر الغرض من منشورك",
+        "purposes": {
+          "shareInsights": "مشاركة رؤى الصناعة",
+          "showcaseExpertise": "عرض الخبرة",
+          "announceUpdate": "الإعلان عن تحديث الشركة",
+          "shareAchievement": "مشاركة إنجاز مهني",
+          "startDiscussion": "بدء مناقشة",
+          "promoteProduct": "الترويج لمنتج أو خدمة"
+        },
+        "tone": "نبرة الصوت",
+        "tonePlaceholder": "اختر النبرة لمنشورك",
+        "tones": {
+          "professional": "احترافية",
+          "conversational": "محادثة",
+          "authoritative": "موثوقة",
+          "inspirational": "ملهمة",
+          "educational": "تعليمية",
+          "thoughtful": "متأملة"
+        },
+        "includePersonalStory": "تضمين قصة شخصية",
+        "includePersonalStoryPlaceholder": "هل تريد تضمين قصة شخصية أو حكاية؟",
+        "includeStatistics": "تضمين إحصائيات",
+        "includeStatisticsPlaceholder": "هل تريد تضمين إحصائيات أو بيانات؟",
+        "callToAction": "دعوة للعمل",
+        "callToActionPlaceholder": "ما هو الإجراء الذي تريد من القراء اتخاذه؟"
+      },
+      "preview": {
+        "description": "راجع منشور لينكد إن الذي تم إنشاؤه"
+      }
+    },
+    "welcome-email": {
+      "title": "رسالة ترحيبية",
+      "description": "إنشاء رسالة ترحيبية دافئة للمشتركين الجدد",
+      "form": {
+        "title": "املأ التفاصيل",
+        "description": "قدم معلومات لإنشاء رسالة الترحيب الخاصة بك",
+        "brandName": "اسم العلامة التجارية",
+        "brandNamePlaceholder": "أدخل اسم علامتك التجارية أو شركتك",
+        "audience": "الجمهور المستهدف",
+        "audiencePlaceholder": "من هم المشتركون لديك؟",
+        "tone": "نبرة الصوت",
+        "tonePlaceholder": "اختر النبرة لرسالتك الإلكترونية",
+        "tones": {
+          "friendly": "ودية",
+          "professional": "احترافية",
+          "enthusiastic": "حماسية",
+          "formal": "رسمية",
+          "casual": "غير رسمية",
+          "conversational": "محادثة"
+        },
+        "keyBenefits": "الفوائد الرئيسية",
+        "keyBenefitsPlaceholder": "ما هي الفوائد التي سيحصل عليها المشتركون؟",
+        "nextSteps": "الخطوات التالية",
+        "nextStepsPlaceholder": "ما الذي يجب على المشتركين فعله بعد ذلك؟",
+        "signatureInfo": "معلومات التوقيع",
+        "signatureInfoPlaceholder": "الاسم والمنصب المراد تضمينه في التوقيع"
+      },
+      "preview": {
+        "description": "راجع رسالة الترحيب التي تم إنشاؤها"
+      }
+    },
+    "how-to-guide": {
+      "title": "دليل إرشادي",
+      "description": "محتوى إرشادي خطوة بخطوة للجمهور الخاص بك",
+      "form": {
+        "title": "املأ التفاصيل",
+        "description": "قدم معلومات لإنشاء الدليل الإرشادي الخاص بك",
+        "topic": "موضوع الدليل",
+        "topicPlaceholder": "ما هو موضوع الدليل الإرشادي الخاص بك؟",
+        "audience": "الجمهور المستهدف",
+        "audiencePlaceholder": "من هو جمهورك المستهدف؟",
+        "difficulty": "مستوى الصعوبة",
+        "difficultyPlaceholder": "اختر مستوى الصعوبة",
+        "difficulties": {
+          "beginner": "مبتدئ",
+          "intermediate": "متوسط",
+          "advanced": "متقدم",
+          "expert": "خبير"
+        },
+        "prerequisites": "المتطلبات المسبقة",
+        "prerequisitesPlaceholder": "اذكر أي متطلبات مسبقة أو مواد مطلوبة",
+        "steps": "الخطوات الرئيسية",
+        "stepsPlaceholder": "حدد الخطوات الرئيسية",
+        "steps": "الخطوات الرئيسية",
+        "stepsPlaceholder": "حدد الخطوات الرئيسية (خطوة واحدة في كل سطر)",
+        "tips": "نصائح إضافية",
+        "tipsPlaceholder": "قدم أي نصائح أو إرشادات إضافية"
+      },
+      "preview": {
+        "description": "راجع الدليل الإرشادي الذي تم إنشاؤه"
+      }
+    },
+    "twitter-thread": {
+      "title": "سلسلة تغريدات",
+      "description": "إنشاء محتوى متعدد التغريدات جذاب لتويتر/إكس",
+      "form": {
+        "title": "املأ التفاصيل",
+        "description": "قدم معلومات لإنشاء سلسلة التغريدات الخاصة بك",
+        "topic": "الموضوع",
+        "topicPlaceholder": "ما هو موضوع سلسلة التغريدات؟",
+        "audience": "الجمهور المستهدف",
+        "audiencePlaceholder": "من هو جمهورك المستهدف؟",
+        "threadLength": "طول السلسلة",
+        "threadLengthPlaceholder": "كم عدد التغريدات في السلسلة؟",
+        "threadLengths": {
+          "short": "3-5 تغريدات",
+          "medium": "5-7 تغريدات",
+          "long": "7-10 تغريدات",
+          "extraLong": "أكثر من 10 تغريدات"
+        },
+        "tone": "نبرة الصوت",
+        "tonePlaceholder": "اختر النبرة لسلسلة التغريدات",
+        "tones": {
+          "casual": "غير رسمية",
+          "professional": "احترافية",
+          "educational": "تعليمية",
+          "humorous": "فكاهية",
+          "controversial": "مثيرة للجدل",
+          "inspirational": "ملهمة"
+        },
+        "includeStats": "تضمين إحصائيات",
+        "includeStatsPlaceholder": "هل يجب أن تتضمن السلسلة إحصائيات؟",
+        "includeQuestions": "تضمين أسئلة",
+        "includeQuestionsPlaceholder": "هل يجب أن تتضمن السلسلة أسئلة لإشراك المتابعين؟",
+        "keyPoints": "النقاط الرئيسية",
+        "keyPointsPlaceholder": "اذكر النقاط الرئيسية التي تريد تغطيتها (نقطة واحدة في كل سطر)",
+        "callToAction": "دعوة للعمل",
+        "callToActionPlaceholder": "ما هو الإجراء الذي تريد من القراء اتخاذه؟"
+      },
+      "preview": {
+        "description": "راجع سلسلة التغريدات التي تم إنشاؤها"
+      }
+    },
+    "promotional-email": {
+      "title": "البريد الإلكتروني الترويجي",
+      "description": "إنشاء رسائل بريد إلكتروني ترويجية مقنعة تدفع المبيعات",
+      "form": {
+        "title": "املأ التفاصيل",
+        "description": "قدم معلومات لإنشاء البريد الإلكتروني الترويجي الخاص بك",
+        "subject": "موضوع البريد الإلكتروني",
+        "subjectPlaceholder": "أدخل سطر موضوع مقنع",
+        "brandName": "اسم العلامة التجارية",
+        "brandNamePlaceholder": "أدخل اسم علامتك التجارية أو شركتك",
+        "promotion": "تفاصيل العرض الترويجي",
+        "promotionPlaceholder": "صف العرض الترويجي أو الخصم أو العرض الخاص",
+        "productService": "المنتج/الخدمة",
+        "productServicePlaceholder": "ما هو المنتج أو الخدمة التي تروج لها؟",
+        "audience": "الجمهور المستهدف",
+        "audiencePlaceholder": "من هو جمهورك المستهدف؟",
+        "urgency": "عامل الإلحاح",
+        "urgencyPlaceholder": "هل هناك موعد نهائي أو توفر محدود؟",
+        "callToAction": "دعوة للعمل",
+        "callToActionPlaceholder": "ما هو الإجراء الذي تريد من القراء اتخاذه؟",
+        "tone": "نبرة الصوت",
+        "tonePlaceholder": "اختر النبرة لبريدك الإلكتروني",
+        "tones": {
+          "persuasive": "مقنعة",
+          "friendly": "ودية",
+          "urgent": "عاجلة",
+          "professional": "احترافية",
+          "enthusiastic": "حماسية"
+        }
+      },
+      "preview": {
+        "description": "راجع البريد الإلكتروني الترويجي الذي تم إنشاؤه"
+      }
+    },
+    "google-ads-copy": {
+      "title": "نص إعلانات جوجل",
+      "description": "إنشاء نصوص فعالة لحملات بحث جوجل",
+      "form": {
+        "title": "معلومات الإعلان",
+        "description": "املأ التفاصيل حول إعلانات جوجل الخاصة بك لإنشاء نص فعال",
+        "productService": "المنتج/الخدمة",
+        "productServicePlaceholder": "ما هو المنتج أو الخدمة التي تعلن عنها؟",
+        "targetKeywords": "الكلمات المفتاحية المستهدفة",
+        "targetKeywordsPlaceholder": "أدخل الكلمات المفتاحية المستهدفة (واحدة في كل سطر)",
+        "uniqueSellingPoint": "نقطة البيع الفريدة",
+        "uniqueSellingPointPlaceholder": "ما الذي يجعل عرضك فريدًا؟",
+        "competitiveAdvantage": "الميزة التنافسية",
+        "competitiveAdvantagePlaceholder": "كيف تتميز عن المنافسين؟",
+        "promotion": "العرض الترويجي",
+        "promotionPlaceholder": "هل هناك عرض ترويجي خاص لتضمينه؟",
+        "callToAction": "دعوة للعمل",
+        "callToActionPlaceholder": "اختر دعوة للعمل"
+      },
+      "result": {
+        "title": "النص الإعلاني المنشأ",
+        "description": "تم إنشاء نص إعلانات جوجل الخاص بك بناءً على مدخلاتك"
+      }
+    },
+    "facebook-ad-copy": {
+      "title": "نص إعلان فيسبوك",
+      "description": "إنشاء نصوص إعلانية مقنعة لحملات فيسبوك",
+      "form": {
+        "title": "معلومات الإعلان",
+        "description": "املأ التفاصيل حول إعلان فيسبوك الخاص بك لإنشاء نص مقنع",
+        "productService": "المنتج/الخدمة",
+        "productServicePlaceholder": "ما هو المنتج أو الخدمة التي تعلن عنها؟",
+        "productServiceRequired": "المنتج/الخدمة مطلوب",
+        "targetAudience": "الجمهور المستهدف",
+        "targetAudiencePlaceholder": "من هو جمهورك المستهدف؟",
+        "targetAudienceRequired": "الجمهور المستهدف مطلوب",
+        "primaryBenefit": "الفائدة الرئيسية",
+        "primaryBenefitPlaceholder": "ما هي الفائدة الرئيسية لمنتجك/خدمتك؟",
+        "primaryBenefitRequired": "الفائدة الرئيسية مطلوبة",
+        "secondaryBenefits": "الفوائد الثانوية",
+        "secondaryBenefitsPlaceholder": "اذكر أي فوائد إضافية",
+        "tone": "نبرة الصوت",
+        "tonePlaceholder": "اختر النبرة لإعلانك",
+        "tones": {
+          "persuasive": "مقنعة",
+          "urgent": "عاجلة",
+          "friendly": "ودية",
+          "professional": "احترافية",
+          "humorous": "فكاهية",
+          "emotional": "عاطفية"
+        },
+        "offer": "العرض الخاص",
+        "offerPlaceholder": "هل هناك عرض خاص أو خصم لتضمينه؟",
+        "callToAction": "دعوة للعمل",
+        "callToActionPlaceholder": "اختر دعوة للعمل",
+        "callToActionRequired": "دعوة للعمل مطلوبة",
+        "ctas": {
+          "shopNow": "تسوق الآن",
+          "learnMore": "اعرف المزيد",
+          "signUp": "سجل الآن",
+          "getStarted": "ابدأ الآن",
+          "contactUs": "اتصل بنا",
+          "bookNow": "احجز الآن",
+          "download": "تنزيل",
+          "tryForFree": "جرب مجانًا"
+        }
+      },
+      "preview": {
+        "title": "النص الإعلاني المنشأ",
+        "description": "تم إنشاء نص إعلان فيسبوك الخاص بك بناءً على مدخلاتك"
+      }
+    },
+    "feature-comparison": {
+      "title": "مقارنة الميزات",
+      "description": "إنشاء مقارنات مفصلة للميزات بين منتجك والمنافسين",
+      "form": {
+        "title": "املأ التفاصيل",
+        "description": "قدم معلومات لإنشاء مقارنة الميزات الخاصة بك",
+        "productName": "اسم منتجك",
+        "productNamePlaceholder": "مثال: أحذية الجري ألترابوست",
+        "competitorProducts": "منتجات المنافسين",
+        "competitorProductsPlaceholder": "اذكر منتجات المنافسين للمقارنة (منتج واحد في كل سطر)",
+        "keyFeatures": "الميزات الرئيسية للمقارنة",
+        "keyFeaturesPlaceholder": "اذكر الميزات الرئيسية للمقارنة (مثل السعر، المتانة، الأداء)",
+        "targetAudience": "الجمهور المستهدف",
+        "targetAudiencePlaceholder": "مثال: العدائين، الرياضيين، محبي اللياقة البدنية",
+        "comparisonStyle": "أسلوب المقارنة",
+        "comparisonStylePlaceholder": "اختر الأسلوب"
+      },
+      "preview": {
+        "description": "راجع مقارنة الميزات التي تم إنشاؤها"
+      }
+    }
+  },
+  "aiTools": {
+    "title": "أدوات الذكاء الاصطناعي",
+    "subtitle": "أدوات ذكاء اصطناعي قوية لمساعدتك في إنشاء وتحرير وتحسين المحتوى الخاص بك.",
+    "categories": {
+      "allTools": "جميع الأدوات",
+      "contentCreation": "إنشاء المحتوى",
+      "editing": "التحرير",
+      "media": "الوسائط",
+      "ideation": "توليد الأفكار"
+    },
+    "tools": {
+      "blogWriter": {
+        "title": "كاتب المدونات",
+        "description": "إنشاء مقالات مدونة محسنة لمحركات البحث باستخدام الذكاء الاصطناعي"
+      },
+      "socialMedia": {
+        "title": "وسائل التواصل الاجتماعي",
+        "description": "إنشاء محتوى جذاب لوسائل التواصل الاجتماعي"
+      },
+      "contentImprover": {
+        "title": "محسن المحتوى",
+        "description": "تحسين المحتوى الحالي الخاص بك"
+      },
+      "emailWriter": {
+        "title": "كاتب البريد الإلكتروني",
+        "description": "صياغة رسائل بريد إلكتروني احترافية بسرعة"
+      },
+      "brainstorming": {
+        "title": "العصف الذهني",
+        "description": "توليد أفكار للمحتوى الخاص بك"
+      },
+      "grammarChecker": {
+        "title": "مدقق القواعد",
+        "description": "تصحيح أخطاء القواعد والإملاء"
+      }
+    }
+  },
+  "translationTool": {
+    "title": "الترجمة",
+    "subtitle": "ترجم المحتوى الخاص بك إلى لغات متعددة بمساعدة الذكاء الاصطناعي.",
+    "textTranslation": "ترجمة النص",
+    "translateFrom": "ترجم من",
+    "translateTo": "ترجم إلى",
+    "enterText": "أدخل النص للترجمة...",
+    "translationOutput": "مخرجات الترجمة...",
+    "characters": "أحرف",
+    "translate": "ترجم",
+    "translating": "جاري الترجمة...",
+    "saveTranslation": "حفظ الترجمة",
+    "saving": "جاري الحفظ...",
+    "swapLanguages": "تبديل اللغات",
+    "errors": {
+      "translationFailed": "فشلت الترجمة. يرجى المحاولة مرة أخرى.",
+      "noTranslation": "لا توجد ترجمة للحفظ",
+      "saveFailed": "فشل حفظ الترجمة. يرجى المحاولة مرة أخرى."
+    },
+    "success": {
+      "translationSaved": "تم حفظ الترجمة بنجاح"
+    }
+  },
+  "imageGeneration": {
+    "title": "إنشاء الصور",
+    "subtitle": "إنشاء صور من نصوص باستخدام الذكاء الاصطناعي",
+    "tabs": {
+      "generate": "إنشاء",
+      "result": "النتيجة"
+    },
+    "form": {
+      "title": "العنوان (اختياري)",
+      "titlePlaceholder": "أدخل عنوانًا للصورة",
+      "prompt": "وصف الصورة",
+      "promptPlaceholder": "صف الصورة التي تريد إنشاءها",
+      "style": "النمط",
+      "dimensions": "الأبعاد",
+      "generateButton": "إنشاء الصورة",
+      "generating": "جارٍ الإنشاء..."
+    },
+    "result": {
+      "title": "الصورة المنشأة",
+      "subtitle": "إليك الصورة المنشأة بناءً على وصفك",
+      "prompt": "الوصف",
+      "style": "النمط",
+      "dimensions": "الأبعاد",
+      "noImage": "لم يتم إنشاء صورة بعد.",
+      "goToGenerator": "انتقل إلى المنشئ",
+      "downloadButton": "تنزيل الصورة",
+      "saveButton": "حفظ في المعرض",
+      "saving": "جارٍ الحفظ..."
+    },
+    "gallery": {
+      "title": "الصور المنشأة",
+      "noImages": "لم يتم إنشاء صور بعد. قم بإنشاء صورتك الأولى أعلاه!",
+      "download": "تنزيل",
+      "style": "النمط"
+    },
+    "dimensions": {
+      "square": "مربع (1024×1024)",
+      "portrait": "عمودي (1024×1792)",
+      "landscape": "أفقي (1792×1024)"
+    },
+    "styles": {
+      "none": "بدون",
+      "3dRender": "رسم ثلاثي الأبعاد",
+      "pixelArt": "فن البكسل",
+      "digitalArt": "فن رقمي",
+      "photorealistic": "واقعي",
+      "anime": "أنمي",
+      "watercolor": "ألوان مائية",
+      "oilPainting": "لوحة زيتية",
+      "pencilDrawing": "رسم بالقلم الرصاص"
+    },
+    "messages": {
+      "enterPrompt": "الرجاء إدخال وصف",
+      "generationSuccess": "تم إنشاء الصورة بنجاح!",
+      "generationError": "فشل في إنشاء الصورة",
+      "saveSuccess": "تم حفظ الصورة بنجاح!",
+      "saveError": "فشل في حفظ الصورة",
+      "generating": "جارٍ إنشاء الصورة...",
+      "generatingTime": "قد يستغرق هذا ما يصل إلى 30 ثانية"
+    }
+  },
+  "billing": {
+    "title": "الفواتير",
+    "subtitle": "إدارة اشتراكك وتفاصيل الفواتير.",
+    "loading": "جاري تحميل تفاصيل اشتراكك...",
+    "tabs": {
+      "overview": "نظرة عامة",
+      "plans": "الخطط",
+      "invoices": "الفواتير"
+    },
+    "subscription": {
+      "title": "نظرة عامة على الاشتراك",
+      "description": "خطتك الحالية وتفاصيل الاشتراك.",
+      "currentPlan": "الخطة الحالية",
+      "plan": "خطة",
+      "price": "السعر",
+      "renewalDate": "تاريخ التجديد",
+      "manageSubscription": "إدارة الاشتراك",
+      "processing": "جاري المعالجة...",
+      "status": {
+        "active": "نشط",
+        "inactive": "غير نشط"
+      }
+    },
+    "credits": {
+      "title": "استخدام رصيد الذكاء الاصطناعي",
+      "monthlyCredits": "الرصيد الشهري",
+      "remaining": "رصيد متبقي هذا الشهر",
+      "upgrade": "الترقية إلى"
+    },
+    "paymentMethod": {
+      "title": "طريقة الدفع",
+      "expires": "تنتهي الصلاحية",
+      "update": "تحديث"
+    },
+    "plans": {
+      "mostPopular": "الأكثر شعبية",
+      "month": "شهر",
+      "currentPlan": "الخطة الحالية",
+      "subscribeTo": "الاشتراك في"
+    },
+    "invoices": {
+      "title": "سجل الفواتير",
+      "description": "عرض وتنزيل فواتيرك السابقة.",
+      "noInvoices": "لا توجد فواتير بعد",
+      "noInvoicesDesc": "أنت مشترك في الخطة المجانية. قم بالترقية للوصول إلى الميزات المتميزة.",
+      "noInvoicesSubscribed": "ستظهر فواتيرك هنا بمجرد إنشائها.",
+      "upgradeToPro": "الترقية إلى الخطة الاحترافية",
+      "download": "تنزيل"
+    },
+    "features": {
+      "documentsPerMonth": "مستند شهريًا",
+      "aiCredits": "رصيد ذكاء اصطناعي",
+      "basicTemplates": "قوالب أساسية",
+      "allTemplates": "جميع القوالب",
+      "standardSupport": "دعم قياسي",
+      "prioritySupport": "دعم ذو أولوية",
+      "teamCollaboration": "تعاون الفريق",
+      "members": "أعضاء",
+      "customTemplates": "قوالب مخصصة",
+      "apiAccess": "الوصول إلى واجهة برمجة التطبيقات",
+      "advancedAnalytics": "تحليلات متقدمة",
+      "unlimited": "غير محدود"
+    },
+    "messages": {
+      "subscriptionUpdated": "تم تحديث الاشتراك",
+      "subscriptionUpdatedDesc": "تم تحديث اشتراكك بنجاح. إذا لم تر خطتك الجديدة، يرجى النقر على زر التحديث.",
+      "error": "خطأ",
+      "subscriptionSuccess": "تم تحديث اشتراكك بنجاح!",
+      "subscriptionCanceled": "تم إلغاء تحديث الاشتراك."
+    }
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "subtitle": "إدارة إعدادات حسابك وتفضيلاتك.",
+    "saving": "جاري الحفظ...",
+    "updating": "جاري التحديث...",
+    "saveChanges": "حفظ التغييرات",
+    "tabs": {
+      "profile": "الملف الشخصي",
+      "account": "الحساب",
+      "notifications": "الإشعارات"
+    },
+    "profile": {
+      "title": "الملف الشخصي",
+      "description": "إدارة معلومات ملفك الشخصي العامة.",
+      "profileImage": "صورة الملف الشخصي",
+      "uploadNewImage": "تحميل صورة جديدة",
+      "removeImage": "إزالة",
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "email": "البريد الإلكتروني",
+      "bio": "السيرة الذاتية",
+      "bioPlaceholder": "أخبرنا عن نفسك"
+    },
+    "account": {
+      "title": "الحساب",
+      "description": "إدارة إعدادات حسابك وأمانك.",
+      "currentPassword": "كلمة المرور الحالية",
+      "newPassword": "كلمة المرور الجديدة",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "updatePassword": "تحديث كلمة المرور",
+      "twoFactorAuth": "المصادقة الثنائية",
+      "enable2FA": "تفعيل المصادقة الثنائية",
+      "enable2FADescription": "أضف طبقة إضافية من الأمان لحسابك.",
+      "dangerZone": "منطقة الخطر",
+      "deleteAccount": "حذف الحساب",
+      "deleteAccountDescription": "حذف حسابك وجميع بياناتك بشكل دائم.",
+      "deleteAccountDisabled": "هذه الميزة معطلة حاليًا لسلامتك."
+    },
+    "notifications": {
+      "title": "الإشعارات",
+      "description": "تكوين كيفية تلقي الإشعارات.",
+      "emailNotifications": "إشعارات البريد الإلكتروني",
+      "documentUpdates": "تحديثات المستندات",
+      "documentUpdatesDescription": "تلقي إشعارات عند تحديث مستنداتك.",
+      "teamActivity": "نشاط الفريق",
+      "teamActivityDescription": "تلقي إشعارات حول أنشطة أعضاء الفريق.",
+      "marketingUpdates": "تحديثات تسويقية",
+      "marketingUpdatesDescription": "تلقي تحديثات حول الميزات الجديدة والعروض الترويجية.",
+      "pushNotifications": "إشعارات الدفع",
+      "enablePushNotifications": "تمكين إشعارات الدفع",
+      "enablePushNotificationsDescription": "تلقي الإشعارات في متصفحك."
+    },
+    "errors": {
+      "profileSaveFailed": "فشل في حفظ الملف الشخصي",
+      "notificationSaveFailed": "فشل في حفظ إعدادات الإشعارات",
+      "unexpectedError": "حدث خطأ غير متوقع",
+      "allPasswordFieldsRequired": "جميع حقول كلمة المرور مطلوبة",
+      "passwordsDontMatch": "كلمات المرور الجديدة غير متطابقة",
+      "incorrectPassword": "كلمة المرور الحالية غير صحيحة",
+      "passwordUpdateFailed": "فشل في تحديث كلمة المرور"
+    },
+    "success": {
+      "profileSaved": "تم حفظ الملف الشخصي بنجاح",
+      "notificationSaved": "تم حفظ إعدادات الإشعارات بنجاح",
+      "passwordUpdated": "تم تحديث كلمة المرور بنجاح"
+    }
+  }
+}
