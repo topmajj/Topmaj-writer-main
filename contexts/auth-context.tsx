@@ -31,7 +31,8 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter()
   const [user, setUser] = useState<User | null>(null)
   const [session, setSession] = useState<Session | null>(null)
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(false) // Changed from true to false
+  const [isHydrated, setIsHydrated] = useState(false) // Add this new state
 
   const refreshSession = async () => {
     try {
@@ -143,6 +144,11 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     }
   }, [])
 
+  // Add this useEffect after the existing one
+  useEffect(() => {
+    setIsHydrated(true)
+  }, [])
+
   const signOut = async () => {
     logger.info("AuthProvider: Signing out user")
     try {
@@ -160,7 +166,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const value = {
     user,
     session,
-    isLoading,
+    isLoading: isLoading || !isHydrated, // Modified this line
     signOut,
     refreshSession,
   }
