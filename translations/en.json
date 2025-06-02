@@ -909,6 +909,8 @@
       "deleteAccount": "Delete Account",
       "deleteAccountDescription": "Permanently delete your account and all your data.",
       "deleteAccountDisabled": "This feature is currently disabled for your safety.",
+      "confirmDeleteTitle": "Delete Account",
+      "confirmDeleteDescription": "This action cannot be undone. This will permanently delete your account and remove all your data from our servers.",
       "enterPasswordToConfirm": "Enter your password to confirm",
       "passwordPlaceholder": "Enter your password",
       "deleteAccountFailed": "Failed to delete account"
