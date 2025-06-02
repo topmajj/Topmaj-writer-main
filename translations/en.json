@@ -908,7 +908,10 @@
       "dangerZone": "Danger Zone",
       "deleteAccount": "Delete Account",
       "deleteAccountDescription": "Permanently delete your account and all your data.",
-      "deleteAccountDisabled": "This feature is currently disabled for your safety."
+      "deleteAccountDisabled": "This feature is currently disabled for your safety.",
+      "enterPasswordToConfirm": "Enter your password to confirm",
+      "passwordPlaceholder": "Enter your password",
+      "deleteAccountFailed": "Failed to delete account"
     },
     "notifications": {
       "title": "Notifications",
