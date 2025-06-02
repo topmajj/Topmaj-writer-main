@@ -19,6 +19,17 @@ import { Switch } from "@/components/ui/switch"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Separator } from "@/components/ui/separator"
 import { supabase } from "@/lib/supabase"
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 
 export default function SettingsPage() {
   const { user } = useAuth()
@@ -37,6 +48,10 @@ export default function SettingsPage() {
     marketingUpdates: false,
     pushNotifications: true,
   })
+
+  const [showDeleteDialog, setShowDeleteDialog] = useState(false)
+  const [deletePassword, setDeletePassword] = useState("")
+  const [isDeleting, setIsDeleting] = useState(false)
 
   // Fetch user profile
   useEffect(() => {
@@ -207,6 +222,53 @@ export default function SettingsPage() {
     }
   }
 
+  const handleDeleteAccount = async () => {
+    if (!user || !deletePassword) {
+      toast.error(t("settings.errors.passwordRequired", language))
+      return
+    }
+
+    setIsDeleting(true)
+    try {
+      // First verify the password
+      const { error: authError } = await supabase.auth.signInWithPassword({
+        email: user.email || "",
+        password: deletePassword,
+      })
+
+      if (authError) {
+        toast.error(t("settings.errors.incorrectPassword", language))
+        setIsDeleting(false)
+        return
+      }
+
+      // Call the delete account API
+      const response = await fetch("/api/auth/delete-account", {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ password: deletePassword }),
+      })
+
+      const result = await response.json()
+
+      if (!response.ok) {
+        toast.error(result.error || t("settings.errors.deleteAccountFailed", language))
+        setIsDeleting(false)
+        return
+      }
+
+      // Success - redirect to home page
+      toast.success(t("settings.success.accountDeleted", language))
+      window.location.href = "/"
+    } catch (error) {
+      toast.error(t("settings.errors.unexpectedError", language))
+      console.error("Error deleting account:", error)
+      setIsDeleting(false)
+    }
+  }
+
   return (
     <div className="flex flex-col gap-6 w-full">
       <div className="flex flex-col gap-2 w-full">
@@ -360,12 +422,50 @@ export default function SettingsPage() {
                       {t("settings.account.deleteAccountDescription", language)}
                     </p>
                   </div>
-                  <Button
-                    variant="destructive"
-                    onClick={() => toast.error(t("settings.account.deleteAccountDisabled", language))}
-                  >
-                    {t("settings.account.deleteAccount", language)}
-                  </Button>
+                  <AlertDialog open={showDeleteDialog} onOpenChange={setShowDeleteDialog}>
+                    <AlertDialogTrigger asChild>
+                      <Button variant="destructive">{t("settings.account.deleteAccount", language)}</Button>
+                    </AlertDialogTrigger>
+                    <AlertDialogContent>
+                      <AlertDialogHeader>
+                        <AlertDialogTitle>{t("settings.account.confirmDeleteTitle", language)}</AlertDialogTitle>
+                        <AlertDialogDescription className="space-y-4">
+                          <p>{t("settings.account.confirmDeleteDescription", language)}</p>
+                          <div className="space-y-2">
+                            <Label htmlFor="delete-password">
+                              {t("settings.account.enterPasswordToConfirm", language)}
+                            </Label>
+                            <Input
+                              id="delete-password"
+                              type="password"
+                              value={deletePassword}
+                              onChange={(e) => setDeletePassword(e.target.value)}
+                              placeholder={t("settings.account.passwordPlaceholder", language)}
+                            />
+                          </div>
+                        </AlertDialogDescription>
+                      </AlertDialogHeader>
+                      <AlertDialogFooter>
+                        <AlertDialogCancel
+                          onClick={() => {
+                            setDeletePassword("")
+                            setShowDeleteDialog(false)
+                          }}
+                        >
+                          {t("common.cancel", language)}
+                        </AlertDialogCancel>
+                        <AlertDialogAction
+                          onClick={handleDeleteAccount}
+                          disabled={!deletePassword || isDeleting}
+                          className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
+                        >
+                          {isDeleting
+                            ? t("settings.deleting", language)
+                            : t("settings.account.deleteAccount", language)}
+                        </AlertDialogAction>
+                      </AlertDialogFooter>
+                    </AlertDialogContent>
+                  </AlertDialog>
                 </div>
               </div>
             </CardContent>
