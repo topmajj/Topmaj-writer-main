@@ -54,6 +54,8 @@
     "generationError": "An error occurred while generating content",
     "noContentToSave": "No content to save or user not authenticated",
     "contentSaved": "Content saved to documents",
+    "deleting": "Deleting...",
+    "passwordRequired": "Password is required",
     "savingError": "An error occurred while saving content"
   },
   "language": {
