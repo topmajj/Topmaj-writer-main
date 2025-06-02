@@ -54,6 +54,8 @@
     "generationError": "حدث خطأ أثناء إنشاء المحتوى",
     "noContentToSave": "لا يوجد محتوى للحفظ أو المستخدم غير مصادق عليه",
     "contentSaved": "تم حفظ المحتوى في المستندات",
+    "deleting": "جاري الحذف...",
+    "passwordRequired": "كلمة المرور مطلوبة",
     "savingError": "حدث خطأ أثناء حفظ المحتوى"
   },
   "language": {
@@ -871,6 +873,11 @@
     "saving": "جاري الحفظ...",
     "updating": "جاري التحديث...",
     "saveChanges": "حفظ التغييرات",
+    "confirmDeleteTitle": "حذف الحساب",
+    "confirmDeleteDescription": "لا يمكن التراجع عن هذا الإجراء. سيؤدي هذا إلى حذف حسابك نهائياً وإزالة جميع بياناتك من خوادمنا.",
+    "enterPasswordToConfirm": "أدخل كلمة المرور للتأكيد",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "deleteAccountFailed": "فشل في حذف الحساب",
     "tabs": {
       "profile": "الملف الشخصي",
       "account": "الحساب",
@@ -929,6 +936,7 @@
     "success": {
       "profileSaved": "تم حفظ الملف الشخصي بنجاح",
       "notificationSaved": "تم حفظ إعدادات الإشعارات بنجاح",
+       "accountDeleted": "تم حذف الحساب بنجاح",
       "passwordUpdated": "تم تحديث كلمة المرور بنجاح"
     }
   }
