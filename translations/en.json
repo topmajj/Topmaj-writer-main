@@ -731,7 +731,8 @@
       "saveFailed": "Failed to save translation. Please try again."
     },
     "success": {
-      "translationSaved": "Translation saved successfully"
+      "translationSaved": "Translation saved successfully",
+      "accountDeleted": "Account deleted successfully"
     }
   },
   "imageGeneration": {
