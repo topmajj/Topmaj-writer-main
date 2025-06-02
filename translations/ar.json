@@ -909,6 +909,8 @@
       "deleteAccount": "حذف الحساب",
       "deleteAccountDescription": "حذف حسابك وجميع بياناتك بشكل دائم.",
       "deleteAccountDisabled": "هذه الميزة معطلة حاليًا لسلامتك.",
+      "confirmDeleteTitle": "حذف الحساب",
+      "confirmDeleteDescription": "لا يمكن التراجع عن هذا الإجراء. سيؤدي هذا إلى حذف حسابك نهائياً وإزالة جميع بياناتك من خوادمنا.",
       "enterPasswordToConfirm": "أدخل كلمة المرور للتأكيد",
       "passwordPlaceholder": "أدخل كلمة المرور",
       "deleteAccountFailed": "فشل في حذف الحساب"
