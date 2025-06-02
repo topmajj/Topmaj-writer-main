@@ -908,7 +908,10 @@
       "dangerZone": "منطقة الخطر",
       "deleteAccount": "حذف الحساب",
       "deleteAccountDescription": "حذف حسابك وجميع بياناتك بشكل دائم.",
-      "deleteAccountDisabled": "هذه الميزة معطلة حاليًا لسلامتك."
+      "deleteAccountDisabled": "هذه الميزة معطلة حاليًا لسلامتك.",
+      "enterPasswordToConfirm": "أدخل كلمة المرور للتأكيد",
+      "passwordPlaceholder": "أدخل كلمة المرور",
+      "deleteAccountFailed": "فشل في حذف الحساب"
     },
     "notifications": {
       "title": "الإشعارات",
